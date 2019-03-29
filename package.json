@@ -1,0 +1,50 @@
+{
+  "name": "travelpayouts-test",
+  "version": "1.0.0",
+  "description": "Test app for Travelpayouts",
+  "main": "index.js",
+  "author": "Oleg Frolov",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production --config webpack.prod.js --env.NODE_ENV=production --progress",
+    "dev": "webpack-dev-server --hot --mode development --open --config webpack.dev.js",
+    "test": "eslint src"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.11.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.16.4",
+    "prop-types": "^15.7.2",
+    "react-hot-loader": "^4.8.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "react": "^16.8.6",
+    "react-dom": "npm:@hot-loader/react-dom"
+  }
+}
