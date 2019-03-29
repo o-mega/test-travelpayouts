@@ -1,0 +1,112 @@
+// body & core
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $gray-100;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: $black;
+}
+
+a,
+button,
+input {
+  outline: none;
+  box-shadow: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+// root structure
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 80px 1fr auto;
+  min-height: 100vh;
+  width: 100%;
+
+  aside {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+  }
+}
+
+
+// Forms
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 10px 32px;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: none;
+  font-size: 19px;
+  line-height: 1;
+  text-align: center;
+  transition: all 300ms;
+
+  &.secondary {
+    border-color: #CFD2D9;
+    color: $gray-800;
+
+    &:hover,
+    &:focus {
+      background-color: #CFD2D9;
+    }
+  }
+
+  &.primary {
+    border-color: $blue;
+    background-color: $blue;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      border-color: darken($blue, 15%);
+      background-color: darken($blue, 15%);
+    }
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 15px 17px;
+  border: 1px solid #CFD2D9;
+  border-radius: 4px;
+  background: $white;
+  color: $gray-800;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  transition: all 300ms;
+
+  &:focus {
+    border: 1px solid #2F80ED;
+    box-shadow: 0 0 0 2px #CCE7FF;
+  }
+
+}

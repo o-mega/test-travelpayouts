@@ -1,0 +1,14 @@
+{
+  "header.balance": "Balance",
+  "header.payout": "Payout amount",
+
+  "services.title": "Services",
+
+  "search.label": "Filter by",
+  "search.placeholder": "Search by name",
+  "search.btn": "Reset",
+
+  "services.label": "Promocode",
+  "services.btn": "Get the bonus",
+  "services.copied": "Copied to clipboard"
+}

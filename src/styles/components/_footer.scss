@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  margin: 30px 30px 0 32px;
+  border-top: 1px solid $gray-200;
+  text-align: right;
+  color: $gray-300;
+
+  small {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

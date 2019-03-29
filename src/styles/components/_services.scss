@@ -1,0 +1,116 @@
+.services {
+
+  label,
+  .label {
+    flex: 0 0 100%;
+    display: block;
+    margin-bottom: 7px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: $gray-600;
+  }
+
+  .search {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+
+    .input {
+      width: 300px;
+      margin-right: 8px;
+    }
+  }
+
+  .list {
+    .item {
+      display: grid;
+      grid-template-columns: 1fr 300px 300px;
+      grid-column-gap: 24px;
+      align-items: flex-end;
+      padding: 24px 32px;
+      border: 1px solid #E2E5EC;
+      border-radius: 6px;
+      background: $white;
+
+      .data {
+        flex: 1;
+        align-self: center;
+
+        .name {
+          margin-bottom: 5px;
+          font-weight: 300;
+          font-size: 29px;
+          line-height: 42px;
+        }
+
+        .std {
+          font-size: 15px;
+          line-height: 22px;
+          color: $gray-600;
+        }
+      }
+
+      .code {
+        .input-box {
+          position: relative;
+
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            border: none;
+
+            svg {
+              fill: $blue;
+              transition: all 300ms;
+            }
+
+            &:hover {
+              svg {
+                fill: darken($blue, 15%);
+              }
+            }
+          }
+
+          .status {
+            position: absolute;
+            top: 100%;
+            left: 7px;
+            margin-top: 1px;
+            padding: 4px 6px;
+            border-radius: 4px;
+            background-color: rgba($black, .6);
+            color: $white;
+            font-size: 11px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              bottom: 100%;
+              left: 10px;
+              display: block;
+              width: 0;
+              height: 0;
+              border-bottom: rgba($black, .6) 5px solid;
+              border-left: transparent 5px solid;
+              border-right: transparent 5px solid;
+            }
+          }
+        }
+      }
+
+      +.item {
+        margin-top: 24px;
+      }
+    }
+  }
+}

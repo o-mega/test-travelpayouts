@@ -1,0 +1,14 @@
+{
+  "header.balance": "Баланс",
+  "header.payout": "К выплате",
+
+  "services.title": "Сервисы",
+
+  "search.label": "Фильтр",
+  "search.placeholder": "Поиск по названию",
+  "search.btn": "Сбросить",
+
+  "services.label": "Промокод",
+  "services.btn": "Получить бонус",
+  "services.copied": "Скопировано в буфер"
+}

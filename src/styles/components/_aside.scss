@@ -1,0 +1,36 @@
+aside {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $gray-900;
+
+  .logo {
+    fill: $blue;
+  }
+
+  nav {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 72px;
+
+      svg {
+        fill: $gray-500;
+        transition: all 300ms;
+      }
+
+      &.active,
+      &:hover {
+        svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
