@@ -7,14 +7,15 @@ const formatPrice = (value) => {
   return parseInt(value, 10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0");
 }
 
+
 export const Header = ({ balance, payout, currency, setLocale, lang }) => {
   let curr = currency;
   if (currency === 'rub') curr = '₽';
 
-  const active = lang || Locale.current;
+  const active = lang || localStorage.getItem('lang');
 
   const changeLang = async (newLang) => {
-    await Locale.change(newLang);
+    await Locale.load(newLang);
     setLocale(newLang);
   }
 

@@ -1,6 +1,5 @@
 export class Locale {
   constructor() {
-    this.current = '';
     this.phrases = {};
   }
 
@@ -10,13 +9,8 @@ export class Locale {
     const json = await response.json();
 
     this.phrases = json;
-    this.current = lang;
 
     return localStorage.setItem('lang', lang);
-  }
-
-  static change(newLocale) {
-    return this.load(newLocale);
   }
 
   static get(keyName) {

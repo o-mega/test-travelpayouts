@@ -9,7 +9,7 @@ const linksArr = [
   'Разработчикам',
   'Сервисы',
   'Финансы'
-]
+];
 
 export const Aside = () => {
   return (

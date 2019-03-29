@@ -3,11 +3,10 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 
 const SOURCES = resolve(__dirname, 'src');
-const DIST = resolve(__dirname, 'public', 'dist');
+const DIST = resolve(__dirname, 'dist');
 
 
 const config = {
-
   context: SOURCES,
   target: 'web',
 

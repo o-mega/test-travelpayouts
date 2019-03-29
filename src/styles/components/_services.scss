@@ -85,10 +85,10 @@
             position: absolute;
             top: 100%;
             left: 7px;
-            margin-top: 1px;
+            margin-top: -7px;
             padding: 4px 6px;
             border-radius: 4px;
-            background-color: rgba($black, .6);
+            background-color: rgba($gray-900, .8);
             color: $white;
             font-size: 11px;
 
@@ -96,11 +96,11 @@
               content: "";
               position: absolute;
               bottom: 100%;
-              left: 10px;
+              left: 30px;
               display: block;
               width: 0;
               height: 0;
-              border-bottom: rgba($black, .6) 5px solid;
+              border-bottom: rgba($gray-900, .8) 5px solid;
               border-left: transparent 5px solid;
               border-right: transparent 5px solid;
             }

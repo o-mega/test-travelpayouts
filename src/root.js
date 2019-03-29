@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-import { loadData, Locale } from './api/';
+import { loadData } from './api/';
 import { Aside, Header, Services } from './components/';
 
 
 const App = () => {
   const [data, loading] = loadData();
-  const [locale, setLocale] = useState(Locale.current);
+  const [locale, setLocale] = useState(null);
 
   return (
     <div className="wrapper">

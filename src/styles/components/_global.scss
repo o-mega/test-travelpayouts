@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: $gray-100;
+  background-color: #F5F7FA;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   color: $black;
@@ -104,9 +104,8 @@ button {
   line-height: 22px;
   transition: all 300ms;
 
-  &:focus {
+  &:not([readonly]):focus {
     border: 1px solid #2F80ED;
     box-shadow: 0 0 0 2px #CCE7FF;
   }
-
 }

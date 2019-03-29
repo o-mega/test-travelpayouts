@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Locale } from '../api';
+import { Locale } from '../api/';
 
 
 export const ListItem = ({ data: { title, description, promocode, link } }) => {
@@ -35,7 +35,7 @@ export const ListItem = ({ data: { title, description, promocode, link } }) => {
             </svg>
           </button>
 
-          {status && <div class="status">{status}</div>}
+          {status && <div className="status">{status}</div>}
         </div>
       </div>
 
