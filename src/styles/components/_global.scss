@@ -40,6 +40,10 @@ button {
   min-height: 100vh;
   width: 100%;
 
+  @media screen and (max-width: 499px) {
+    grid-template-columns: 64px 1fr;
+  }
+
   aside {
     grid-row-start: 1;
     grid-row-end: 4;
@@ -64,6 +68,10 @@ button {
   line-height: 1;
   text-align: center;
   transition: all 300ms;
+
+  @media screen and (max-width: 499px) {
+    font-size: 16px;
+  }
 
   &.secondary {
     border-color: #CFD2D9;

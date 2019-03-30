@@ -1,6 +1,10 @@
 .content {
   padding: 40px 30px 0 32px;
 
+  @media screen and (max-width: 499px) {
+    padding: 30px 15px 0 15px;
+  }
+
   h1 {
     margin-bottom: 16px;
     font-family: Rubik, sans-serif;
@@ -9,6 +13,10 @@
     font-size: 39px;
     line-height: normal;
     color: $gray-800;
+
+    @media screen and (max-width: 499px) {
+      font-size: 32px;
+    }
   }
 
   .spinner {

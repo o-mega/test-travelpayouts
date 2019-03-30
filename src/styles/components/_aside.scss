@@ -5,6 +5,10 @@ aside {
   align-items: center;
   background-color: $gray-900;
 
+  @media screen and (max-width: 499px) {
+    padding-top: 12px;
+  }
+
   .logo {
     fill: $blue;
   }
@@ -14,15 +18,28 @@ aside {
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 699px) {
+      margin-top: 22px;
+    }
+
     a {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 72px;
 
+      @media screen and (max-width: 499px) {
+        height: 50px;
+      }
+
       svg {
         fill: $gray-500;
         transition: all 300ms;
+
+        @media screen and (max-width: 499px) {
+          max-width: 20px;
+          max-height: 20px;
+        }
       }
 
       &.active,

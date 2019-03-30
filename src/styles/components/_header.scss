@@ -2,11 +2,18 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 80px;
   padding: 0 32px;
   background-color: $white;
 
+  @media screen and (max-width: 499px) {
+    padding: 0 15px;
+  }
+
   .item {
+    @media screen and (max-width: 499px) {
+      order: 1;
+    }
+
     .label {
       font-size: 13px;
       line-height: 19px;
@@ -28,6 +35,11 @@ header {
   .lang {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 499px) {
+      order: 0;
+      flex: 0 0 100%;
+    }
 
     button {
       display: block;
